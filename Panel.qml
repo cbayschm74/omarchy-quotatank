@@ -12,8 +12,8 @@ import "UsageLogic.js" as UsageLogic
 
 Ui.Panel {
   id: root
-  moduleName: "janitorhead.quotatank"
-  ipcTarget: "janitorhead.quotatank"
+  moduleName: "cbayschm.quotatank"
+  ipcTarget: "cbayschm.quotatank"
   manageIpc: false
 
   readonly property color foreground: bar ? bar.foreground : Commons.Color.foreground

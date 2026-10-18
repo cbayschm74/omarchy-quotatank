@@ -159,7 +159,7 @@ ShellRoot {
 
   function setup() {
     widget = loadComponent(panelUrl, {
-      moduleName: "janitorhead.quotatank",
+      moduleName: "cbayschm.quotatank",
       bar: fakeBar,
       settings: {
         enabledProviders: ["claude", "codex", "kimi"],
@@ -268,8 +268,8 @@ ShellRoot {
       assertEqual(barRemaining.text, "20%", "ambiguous activity names no account")
     }
     if (widget) {
-      assertEqual(widget.moduleName, "janitorhead.quotatank", "moduleName injection")
-      assertEqual(widget.ipcTarget, "janitorhead.quotatank", "IPC target")
+      assertEqual(widget.moduleName, "cbayschm.quotatank", "moduleName injection")
+      assertEqual(widget.ipcTarget, "cbayschm.quotatank", "IPC target")
       assertEqual(widget.setting("missing", "fallback"), "fallback", "setting fallback")
       assertTrue(finite(widget.implicitWidth), "horizontal implicitWidth is finite")
       assertTrue(finite(widget.implicitHeight), "horizontal implicitHeight is finite")

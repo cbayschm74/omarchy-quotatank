@@ -189,7 +189,7 @@ class ProjectContractTests(unittest.TestCase):
 
     def test_namespaced_ipc_and_no_builtin_alias_collision(self):
         panel = (ROOT / "Panel.qml").read_text()
-        self.assertIn('ipcTarget: "janitorhead.quotatank"', panel)
+        self.assertIn('ipcTarget: "cbayschm.quotatank"', panel)
         for operation in ("open", "close", "toggle", "refresh", "next"):
             self.assertIn(f"function {operation}(", panel)
         for operation in ("limits", "costs"):
